@@ -1,0 +1,108 @@
+<!doctype html>
+<html lang="en">
+ <head>
+  <meta charset="UTF-8">
+  <meta name="Generator" content="EditPlus®">
+  <meta name="Author" content="">
+  <meta name="Keywords" content="">
+  <meta name="Description" content="">
+  <title>查询</title>
+  <style type='text/css'>
+.biaodan{
+font-size:15px;
+}
+ #tupian{
+ position:absolute;
+ top:3%;
+ left:20%;
+ right:20%;
+ }
+  #diduan{
+  text-align:center;
+  position:absolute;
+  top:90%;
+  left:10%;
+  right:10%;
+  }
+  #chaxun{
+  height:8%;
+  width:80%;
+  background-color:#9999ff;
+  border-radius:15px;
+  border: none ;
+  border-style: none ;
+text-shadow: none ;
+font-family:站酷快乐体2016修订版;
+font-size:18px;
+color:white;
+position:absolute;
+ top:65%;
+ left:10%;
+ right:10%;
+  }
+  .font1{
+  font-size:
+  }
+ #div1{    
+            border:1px solid #d7d7d7;
+			border-radius:30px;
+        position:absolute;
+ top:25%;
+ left:10%;
+ right:10%;
+			}
+  .td1{
+    border:1px solid #d7d7d7;
+	border-left:none;
+	border-right:none;
+  }
+  </style>
+ </head>
+ <body>
+
+  <div style='text-align: center;' ><img src='{{url_for('static',filename='images/111.png')}}'  width='60%'  id='tupian'/></div>
+  <form method="post" action="/chengjidan">
+  <table id='div1' align='center'  width='80%' height='30%'>
+   <tr ><td ><pre><font face='站酷快乐体2016修订版' size='3'>  学年            <select class='biaodan' name="xn">
+   <option value="2017">2017-2018</option>
+   <option value="2016">2016-2017</option>
+      <option value="2015">2015-2016</option>
+	     <option value="2014">2014-2015</option>
+   </select></pre></font>
+   </td></tr>
+   <tr ><td class='td1'><pre><font size='3'  face='站酷快乐体2016修订版'>  学期              <select class='biaodan' name="xq">
+   <option value="0" >第一学期</option>
+   <option value="1">第二学期</option>
+   </select></font></pre></td></tr>
+   <tr ><td >
+   <pre>   <input type='radio' name='sj' value="0" ><font size='3' face='站酷快乐体2016修订版'>原始成绩     </font><input type='radio' name='sj' value="1" checked><font size='3' face='站酷快乐体2016修订版'>有效成绩</pre></font>
+   </td>
+   </tr> 
+  </table><br/><br/>
+
+
+ <div align='center'><button type="submit" id="chaxun" >查询</button></div>
+  </form>
+
+<div id='diduan' width='80%'><font  face='站酷快乐体2016修订版' color='9999ff'>吉林农业大学 · 易班工作站</font>
+</div> <meta name="viewport" content="width=device-width, initial-scale=1.0">
+</body>
+</html>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
